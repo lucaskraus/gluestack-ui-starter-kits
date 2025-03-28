@@ -1,84 +1,32 @@
-# gluestack-ui Starter Kit
+# Turborepo react-native starter
 
-Welcome to the gluestack-ui Starter Kit! This project is designed to help you kickstart your application development with React and React Native. It supports both Next.js and Expo, providing a flexible and modular architecture.
+This is an official starter Turborepo.
 
-## Getting Started
+## Using this example
 
-### Installation
+Run the following command:
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/gluestack/gluestack-ui-starter-kits.git
-cd gluestack-ui-starter-kits
+```sh
+npx create-turbo@latest -e with-react-native-web
 ```
 
-2. Install dependencies:
+## What's inside?
 
-Go to `expo-app`, `next` and `universal` folders and run the following command in each:
+This Turborepo includes the following packages/apps:
 
-```bash
-yarn
-```
+### Apps and Packages
 
-### Running the Application
+- `native`: a [react-native](https://reactnative.dev/) app built with [expo](https://docs.expo.dev/)
+- `web`: a [Next.js](https://nextjs.org/) app built with [react-native-web](https://necolas.github.io/react-native-web/)
+- `@/components/ui`: a stub [react-native](https://reactnative.dev/) component library shared by both `web` and `native` applications
+- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
 
-#### Next.js
+Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
 
-To run the Next.js application, run the following command:
+### Utilities
 
-```bash
-cd next && yarn dev
-```
+This Turborepo has some additional tools already setup for you:
 
-#### Expo
-
-To run the Expo application, run the following command:
-
-```bash
-cd expo-app && yarn start
-```
-
-#### Universal
-
-For the Expo app in the universal project, run the following command:
-
-```bash
-cd universal && yarn run:expo
-```
-
-For the Next.js app in the universal project, run the following command:
-
-```bash
-cd universal && yarn run:next
-```
-
-## Project Structure
-
-### Next.js
-
-- `next`: Contains the Next.js application along with components and screens.
-
-### Expo
-
-- `expo`: Contains the Expo application along with components and screens.
-
-### Universal
-
-- `app/next`: Contains the Next.js application.
-- `app/expo`: Contains the Expo application.
-- `packages/components`: Shared components used across platforms.
-- `packages/screens`: Shared screens that can be used in both Next.js and Expo projects.
-- `packages/shared`: Shared assets
-
-# Usage
-
-You can copy the project of your choice (Next.js, Expo, or Universal) and start building your application. The starter kit provides a basic structure and shared components to help you get started quickly.
-
-# Ejection
-
-If you have copied the universal project and want to eject the project, you can run the following command:
-
-```bash
-cd universal && yarn eject
-```
+- [Expo](https://docs.expo.dev/) for native development
+- [TypeScript](https://www.typescriptlang.org/) for static type checking
+- [Prettier](https://prettier.io) for code formatting
