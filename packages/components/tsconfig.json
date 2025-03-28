@@ -10,7 +10,6 @@
     "allowUnreachableCode": false,
     "allowUnusedLabels": true,
     "esModuleInterop": true,
-    "importsNotUsedAsValues": "error",
     "forceConsistentCasingInFileNames": true,
     "jsx": "preserve",
     "jsxImportSource": "nativewind",
